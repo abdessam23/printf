@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printuns.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:31:34 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 10:35:41 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/18 12:37:07 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_printuns(unsigned int n)
 {
 	if (n > 9)
-		ft_unsint(n / 10);
-	ft_putchar(n % 10 + '0');
+		ft_printuns(n / 10);
+	putchar(n % 10 + '0');
 	return (ft_numlen(n));
 }

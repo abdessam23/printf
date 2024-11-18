@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexade_low.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:37:23 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 10:42:47 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/18 12:33:36 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_hexade_low(unsigned int n)
 		ft_hexade_low(n % 16);
 	}
 	else
-		ft_putchar(b[n]);
+		write(1, &b[n], 1);
 	return (ft_numlen(n));
 }
 

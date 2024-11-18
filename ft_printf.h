@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hexade_upr.c                                    :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 10:43:42 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 12:33:41 by abhimi           ###   ########.fr       */
+/*   Created: 2024/11/18 12:17:17 by abhimi            #+#    #+#             */
+/*   Updated: 2024/11/18 12:37:12 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINT_H
+# define FT_PRINT_H
 
-int	ft_hexade_upr(unsigned int n)
-{
-	char *b = "0123456789ABCDEF";
-	if (n >= 16)
-	{
-		ft_hexade_upr(n / 16);
-		ft_hexade_upr(n % 16);
-	}
-	else
-		write(1, &b[n], 1);
-	return (ft_numlen(n));
-}
+# include <unistd.h>
+# include <stdarg.h>
+# include <stdio.h>
+
+int	ft_hexade_low(unsigned int n);
+int	ft_hexade_upr(unsigned int n);
+int	ft_numlen(long n);
+int	ft_printadds(unsigned long n);
+int ft_printchar(char c);
+int	ft_printf(const char *format, ...);
+int	ft_printnbr_int(int n);
+int	ft_printstr(char *s);
+int	ft_printuns(unsigned int n);
+
+#endif
