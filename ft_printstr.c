@@ -6,23 +6,27 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 09:48:58 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 12:12:56 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/18 18:53:29 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "printf.h"
 
 int	ft_printstr(char *s)
 {
 	int	i;
+	int	l;
 
 	i = 0;
+	l = 0;
 	if (!s)
 		return (0);
-	while (s[i])
+	while (s[l])
+		l++;
+	while (*s)
 	{
-		write(1, &s[i], 1);
-		i++;
+		ft_printchar(*s);
+		s++;
 	}
-	return (i);
+	return (l);
 }

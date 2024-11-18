@@ -6,11 +6,11 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:43:42 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 12:33:41 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/18 14:12:37 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "printf.h"
 
 int	ft_hexade_upr(unsigned int n)
 {

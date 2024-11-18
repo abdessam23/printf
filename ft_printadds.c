@@ -6,11 +6,11 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 09:55:01 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 12:34:18 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/18 14:12:28 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "printf.h"
 
 int	ft_printadds(unsigned long n)
 {
