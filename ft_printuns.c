@@ -6,11 +6,11 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:31:34 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/19 17:50:01 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 22:37:08 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printuns(unsigned int n)
 {

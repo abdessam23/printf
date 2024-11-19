@@ -6,11 +6,11 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:43:42 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/19 17:35:53 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 22:38:56 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_hexade_upr(unsigned int n)
 {
@@ -18,7 +18,7 @@ int	ft_hexade_upr(unsigned int n)
 	char	*b;
 
 	l = 0;
-	b = "0123456789abcdef";
+	b = "0123456789ABCDEF";
 	if (n >= 16)
 	{
 		l += ft_hexade_upr(n / 16);

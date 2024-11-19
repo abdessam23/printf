@@ -6,11 +6,11 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 09:42:04 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/19 17:41:32 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 22:45:10 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	ft_format(va_list args, char c)
 {
@@ -42,11 +42,9 @@ static int	ft_format(va_list args, char c)
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	int		i;
 	int		count;
 
 	va_start(args, format);
-	i = 0;
 	count = 0;
 	while (*format)
 	{

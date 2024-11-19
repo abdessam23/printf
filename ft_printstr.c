@@ -6,21 +6,19 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 09:48:58 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 18:53:29 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 22:44:42 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printstr(char *s)
 {
-	int	i;
 	int	l;
 
-	i = 0;
 	l = 0;
 	if (!s)
-		return (0);
+		return (write(1, "(null)", 6));
 	while (s[l])
 		l++;
 	while (*s)
