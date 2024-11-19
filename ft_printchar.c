@@ -6,13 +6,13 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 09:46:09 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 14:12:24 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 17:36:51 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int ft_printchar(char c)
+int	ft_printchar(char c)
 {
 	write(1, &c, 1);
 	return (1);

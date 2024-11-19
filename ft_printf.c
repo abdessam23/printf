@@ -6,15 +6,15 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 09:42:04 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 18:54:30 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 17:41:32 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int ft_format(va_list args ,char c)
+static int	ft_format(va_list args, char c)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (c == '%')
@@ -36,38 +36,29 @@ int ft_format(va_list args ,char c)
 		count = ft_printstr("0x");
 		count += ft_printadds(va_arg(args, unsigned long));
 	}
-	return (count);	
+	return (count);
 }
 
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	int	i;
-	int	count;
+	int		i;
+	int		count;
 
-	
-	va_start (args, format);
+	va_start(args, format);
 	i = 0;
 	count = 0;
 	while (*format)
 	{
 		if (*format == '%')
 		{
-			// if (format[i + 1] != '\0')
-			    format++;
-				count += ft_format(args,*format);
+			format++;
+			count += ft_format(args,*format);
 		}
 		else
 			count += ft_printchar(*format);
 		format++;
 	}
-	va_end (args);
+	va_end(args);
 	return (count);
-}
-
-#include<stdio.h>
-int main()
-{
-	int i = -2147483648;
-	ft_printf("%d HELLO", i);
 }

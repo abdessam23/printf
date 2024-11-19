@@ -6,12 +6,12 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 14:07:47 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/18 14:14:45 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/19 17:52:59 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINT_H
-# define PRINT_H
+#ifndef PRINTF_H
+# define PRINTF_H
 
 # include <unistd.h>
 # include <stdarg.h>
@@ -26,5 +26,4 @@ int	ft_printf(const char *format, ...);
 int	ft_printnbr_int(int n);
 int	ft_printstr(char *s);
 int	ft_printuns(unsigned int n);
-
 #endif
