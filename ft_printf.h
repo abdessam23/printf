@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 14:07:47 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/19 22:38:24 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/20 15:21:21 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdio.h>
+# include <limits.h>
 
 int	ft_hexade_low(unsigned int n);
 int	ft_hexade_upr(unsigned int n);

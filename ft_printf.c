@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 09:42:04 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/20 12:21:40 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/20 18:47:51 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,13 @@ int	ft_printf(const char *format, ...)
 {
 	va_list	args;
 	int		count;
+	char	b;
 
+	if (!format)
+		return (0);
 	va_start(args, format);
 	count = 0;
-	if (write(1, 0, 0) == -1)
+	if (write(1, &b, 0) == -1)
 		return (-1);
 	while (*format)
 	{
