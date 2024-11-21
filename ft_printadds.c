@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 09:55:01 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/19 22:38:46 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/21 19:06:28 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,14 @@
 static int	ft_printhex(uintptr_t n)
 {
 	char	*b;
+	int		k;
 
+	k = 0;
 	b = "0123456789abcdef";
 	if (n >= 16)
-		ft_printhex(n / 16);
-	return (write(1, &b[n % 16], 1));
+		k += ft_printhex(n / 16);
+	k += write(1, &b[n % 16], 1);
+	return (k);
 }
 
 int	ft_printadds(void *p)
