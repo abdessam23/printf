@@ -17,11 +17,12 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <limits.h>
+# include <stdint.h>
 
 int	ft_hexade_low(unsigned int n);
 int	ft_hexade_upr(unsigned int n);
 int	ft_numlen(long n);
-int	ft_printadds(unsigned long n);
+int	ft_printadds(void *p);
 int	ft_printchar(char c);
 int	ft_printf(const char *format, ...);
 int	ft_printnbr_int(int n);

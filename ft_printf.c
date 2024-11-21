@@ -32,10 +32,7 @@ static int	ft_format(va_list args, char c)
 	else if (c == 'X')
 		count = ft_hexade_upr(va_arg(args, unsigned int));
 	else if (c == 'p')
-	{
-		count = ft_printstr("0x");
-		count += ft_printadds(va_arg(args, unsigned long));
-	}
+		count += ft_printadds(va_arg(args, void *));
 	return (count);
 }
 
